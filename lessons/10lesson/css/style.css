@@ -1,0 +1,104 @@
+@font-face {
+	font-family: BigJohn;
+	src: url(../fonts/BigJohn.otf) format("opentype");
+}
+
+@font-face {
+	font-family: SlimJoe;
+	src: url(../fonts/Slim+Joe.otf) format("opentype");
+}
+
+.header {
+	height: 650px;
+	background: url(../img/computer.png) no-repeat;
+}
+
+.header__wrap {
+	padding-top: 36px;
+}
+
+.header__logo {
+	margin: 0;
+	height: 99px;
+	width: 174px;
+	display: inline-block;
+}
+
+.header__nav {
+	width: 560px;
+	margin-top: 40px;
+	float: right;
+}
+
+.header__navEl {
+	width: 25%;
+	font-family: Lato;
+	color:  #ffffff;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.header__navEl:not(:last-child):after {
+	content: '/';
+	float: right;	
+}
+
+.nav {
+	font-size: 0;
+	list-style: none;
+}
+
+.nav__el {
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.nav__a {
+	text-decoration: none;
+}
+
+.nav__a:visited {
+	color: white;
+}
+
+.heading {
+	margin-top: 140px;
+	font-family: SlimJoe;
+	color:  #ffffff;
+	font-size: 30px;
+	font-weight: 400;
+	text-align: center;
+}
+.heading__main {
+	font-family: BigJohn;
+	margin: 0;
+}
+
+.heading__alt {
+	margin: 20px 0 0;
+}
+
+.heading__button {
+	background: transparent;
+	color: #48bf72;
+	border-radius: 3px;
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+	border: 2px solid #48bf72;
+	width: 134px;
+	height: 35px;
+	font: 700 14px/25px "Lato";
+	text-align: center;
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+
+.wrap {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.portfolio {
+	height: 2968px;
+}
