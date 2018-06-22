@@ -32,16 +32,13 @@
 
 .header__navEl {
 	width: 25%;
-	font-family: Lato;
 	color:  #ffffff;
-	font-size: 16px;
-	font-weight: 700;
 	text-align: center;
 }
 
 .header__navEl:not(:last-child):after {
 	content: '/';
-	float: right;	
+	float: right;
 }
 
 .nav {
@@ -50,8 +47,12 @@
 }
 
 .nav__el {
+	cursor: pointer;
 	display: inline-block;
 	text-transform: uppercase;
+	font-family: Lato;
+	font-size: 16px;
+	font-weight: 700;
 }
 
 .nav__a {
@@ -101,4 +102,72 @@
 
 .portfolio {
 	height: 2968px;
+	padding: 50px 0;
+}
+
+.portfolio__nav {
+	text-align: center;
+	margin-bottom: 18px;
+}
+
+.portfolio__navEl {
+	color: #3c4955;
+	background-color: #eaeaea;
+	border-radius: 2px;
+	padding: 15px 10px;
+}
+
+.portfolio__navEl:hover {
+	background-color:  #48bf72;
+	color: white;
+	transform: scale(1.1);
+}
+
+.portfolio__navEl:not(:last-child) {
+	margin-right: 14px;
+}
+
+.projects__image {
+	border-radius: 10px;
+	position: relative;
+}
+
+.projects__image--small {
+	width: 450px;
+}
+
+.projects__image--large {
+	width: 650px;
+}
+
+.projects__image--long {
+	height: 400px;
+}
+
+.projects__image--short {
+	height: 300px;
+}
+
+.projects_mask {
+	display: inline-block;
+	position: relative;
+	margin-top: 36px;
+}
+
+.projects_mask:nth-child(even) {
+	margin-left: 36px;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #48bf72;
+	opacity: 0;
+}
+
+.mask:hover {
+	opacity: 0.7;
 }
