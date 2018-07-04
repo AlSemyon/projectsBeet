@@ -101,7 +101,7 @@
 }
 
 .portfolio {
-	height: 2968px;
+	height: 1050px;
 	padding: 50px 0;
 }
 
@@ -152,6 +152,7 @@
 	display: inline-block;
 	position: relative;
 	margin-top: 36px;
+	font-size: 0;
 }
 
 .projects_mask:nth-child(even) {
@@ -166,8 +167,31 @@
 	bottom: 0;
 	background: #48bf72;
 	opacity: 0;
+	text-align: center;
+	border-radius: 10px;
 }
 
 .mask:hover {
 	opacity: 0.7;
+}
+
+.smallHeading {
+	color: white;
+	font-family: Lato;
+	line-height: 30px;
+	position: absolute;
+	top: 30%;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+
+.smallHeading__header {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.smallHeading__subtitle { 
+	font-weight: 400;
+	font-size: 16px;
 }
