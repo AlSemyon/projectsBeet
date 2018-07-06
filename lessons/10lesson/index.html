@@ -5,6 +5,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
 	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="header" id="home">
@@ -51,8 +52,8 @@
 							src="img/multiple items.jpg"
 							alt="multiple items">
 				<div class="mask">
-					<div class="smallHeading">
-						<h3 class="smallHeading__header">Forest app</h3>
+					<div class="smallHeading mask__smallHeading--position">
+						<h3 class="smallHeading__header smallHeading__header--margin15bottom">Forest app</h3>
 						<span class="smallHeading__subtitle">application mobile</span>
 					</div>
 				</div>
@@ -65,8 +66,8 @@
 							src="img/prototype.jpg"
 							alt="prototype">
 				<div class="mask">
-					<div class="smallHeading">
-						<h3 class="smallHeading__header">Forest app</h3>
+					<div class="smallHeading mask__smallHeading--position">
+						<h3 class="smallHeading__header smallHeading__header--margin15bottom">Forest app</h3>
 						<span class="smallHeading__subtitle">application mobile</span>
 					</div>
 				</div>
@@ -79,8 +80,8 @@
 							src="img/identité visuelle.jpg"
 							alt="identité visuelle.">
 				<div class="mask">
-					<div class="smallHeading">
-						<h3 class="smallHeading__header">Forest app</h3>
+					<div class="smallHeading mask__smallHeading--position">
+						<h3 class="smallHeading__header smallHeading__header--margin15bottom">Forest app</h3>
 						<span class="smallHeading__subtitle">application mobile</span>
 					</div>
 				</div>
@@ -93,8 +94,8 @@
 							src="img/app.jpg"
 							alt="app">
 				<div class="mask">
-					<div class="smallHeading">
-						<h3 class="smallHeading__header">Forest app</h3>
+					<div class="smallHeading mask__smallHeading--position">
+						<h3 class="smallHeading__header smallHeading__header--margin15bottom">Forest app</h3>
 						<span class="smallHeading__subtitle">application mobile</span>
 					</div>
 				</div>
@@ -104,23 +105,38 @@
 
 	</section>
 
-	<section id="about">
-		<h3></h3>
-		<h4></h4>
-		<div></div>
-		<button></button>
+	<section id="about" class="about">
+		<div class="about__info about__info--right">
+			<div class="smallHeading about__smallHeading--margin25bottom">
+				<h3 class="smallHeading__header">Name Surname</h3>
+				<span class="smallHeading__subtitle">Webdesigner, creater</span>
+			</div>
+			<div class="about__infoText about__infoText--mb45">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates illum nemo vitae molestias 	itaque sit eveniet soluta natus consequuntur eum labore, est dolorem mollitia reiciendis asperiores, 	accusamus aliquid aut, dolore.</div>
+			<button class="button about__button">Contact me</button>
+		</div>
 	</section>
 
-	<section id="contact">
-		<h3></h3>
-		<label for=""></label>
-		<input type="text">
-		<label for=""></label>
-		<input type="text">
-		<label for=""></label>
-		<input type="text">
+	<section id="contact" class="contact wrap__contact">
+		<h3 class="heading__main contact__header contact__header--mb45">Contact</h3>
+		<div>
+			<label>
+				<input type="tel" class="input input__tel input__tel--mr30" placeholder="nom">
+			</label>
+			<label>
+				<input type="email" class="input input__email" placeholder="email">
+			</label>
+		</div>
+		<div>
+			<label>
+				<textarea name="message" 
+						  id="message"
+						  class="input input__message" 
+						  placeholder="message">
+				</textarea>
+			</label>
+		</div>
 
-		<button></button>
+		<button class="button contact--button">Envoer</button>
 	</section>
 
 	<footer>
