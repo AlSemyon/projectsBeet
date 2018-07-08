@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/header.css">
 </head>
 <body>
 	<header class="header" id="home">
@@ -117,34 +118,35 @@
 	</section>
 
 	<section id="contact" class="contact wrap__contact">
-		<h3 class="heading__main contact__header contact__header--mb45">Contact</h3>
-		<div>
-			<label>
-				<input type="tel" class="input input__tel input__tel--mr30" placeholder="nom">
-			</label>
-			<label>
-				<input type="email" class="input input__email" placeholder="email">
-			</label>
-		</div>
-		<div>
-			<label>
-				<textarea name="message" 
-						  id="message"
-						  class="input input__message" 
-						  placeholder="message">
-				</textarea>
-			</label>
-		</div>
-
-		<button class="button contact--button">Envoer</button>
+		<form>
+			<h3 class="heading__main contact__header contact__header--mb45 contact__element--mb36">Contact<h3>
+			<div class="contact__element--mb36">
+				<label>
+					<input type="tel" class="input input__tel input__tel--mr30" placeholder="nom">
+				</label>
+				<label>
+					<input type="email" class="input input__email" placeholder="email">
+				</label>
+			</div>
+			<div class="contact__element--mb36">
+				<label>
+					<textarea name="message" id="message" class="input input__message" placeholder="message"></textarea>
+				</label>
+			</div>
+			<button class="button contact__button">Envoer</button>
+		</form>
 	</section>
 
-	<footer>
-		<h3></h3>
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
-		<img src="" alt="">
+	<footer class="footer">
+		<div class="wrap">
+			<p class="footer__text">Copyright 2018 asdfsadfasdf sadf <a href="http://fonts.googleapis.com" class="footer__link">http://fonts.googleapis.com</a></p>
+			<div class="footer__social">
+				<a href="#" class="footer__img--mr40"><img class="footer__img" src="img/Twitter.png" alt="Twitter"></a>
+				<a href="#" class="footer__img--mr40"><img class="footer__img" src="img/LinkedIn.png" alt="LinkedIn"></a>
+				<a href="#" class="footer__img--mr40"><img class="footer__img" src="img/Behance.png" alt="Behance"></a>
+				<a href="#"><img class="footer__img" src="img/Dribbble.png" alt="Dribbble"></a>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
