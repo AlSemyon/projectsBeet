@@ -1,0 +1,75 @@
+.flex_column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex_row {
+	display: flex;
+}
+
+.sub_header {
+	font-family: sans-serif;
+	padding: 10px;
+}
+
+.sub_header__main {
+	font-size: 20px;
+	margin: 0;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.sub_header__tip {
+	font-size: 13px;
+	margin: 0;
+	color: grey;
+	text-transform: uppercase;
+}
+
+.billing_form {
+	height: 400px;
+}
+
+.billing_form__header {
+	background: yellow;
+	justify-content: space-between;
+}
+
+.billing_form__summary {
+	font-weight: bold;
+	font-size: 30px;
+	align-self: center;
+}
+
+.billing_form__fieldset {
+	border: none;
+	flex-grow: 2;
+}
+
+.billing_form__label { 
+	color: grey;
+	font-size: 10px;
+}
+
+.billing_form__dates {
+	justify-content: space-between;
+}
+
+.billing_form__cvv {
+	justify-content: space-between;
+}
+
+.billing_form__cvv_advise {
+	align-self: center;
+	font-size: 8px;
+}
+
+.wrap {
+	width: 300px;
+	margin: 0 auto;
+}
+
+.form {
+	flex-grow: 2;
+	align-items: center;
+}

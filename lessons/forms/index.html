@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<div class="wrap">
+		<section class="billing_form flex_column">
+			<section class="sub_header billing_form__header flex_row">
+				<div class="flex_column">
+					<h3 class="sub_header__main">Harold Finch</h3>
+					<h4 class="sub_header__tip">Your total</h4>
+				</div>
+				<span class="billing_form__summary">$88</span>
+			</section>
+			<form class="flex_column form">
+				<fieldset class="billing_form__fieldset flex_column">
+					<label for="credit_card" class="billing_form__label">Credit card number</label>
+					<input type="text" id="credit_card" maxlength="16" minlength="16">
+
+					<span class="billing_form__experation_date billing_form__label">
+						Experian date
+					</span>
+					<div class="flex_row billing_form__dates">
+						<select name="month" id="month">
+							<option value="00" selected disabled>month</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+						</select>
+						<select name="year" id="year">
+							<option value="00" selected disabled>year</option>
+							<option value="01">01</option>
+							<option value="02">02</option>
+						</select>
+					</div>
+
+					<div class="flex_row billing_form__cvv">
+						<div class="flex_column">
+							<label for="cvv" class="billing_form__label">cvv</label>
+							<input type="text" maxlength="3" minlength="3" id="cvv">
+						</div>
+						<span class="billing_form__label billing_form__cvv_advise">3 or 4 digits - <a href="">view example</a></span>
+					</div>
+				</fieldset>
+				<button type="submit">pay</button>
+				<button>Cancel order</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
