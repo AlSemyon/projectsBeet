@@ -56,7 +56,6 @@ select {
 
 .ba-item{
 	flex-basis: 360px;
-	max-height: 540px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px; 
@@ -81,6 +80,9 @@ select {
 	background: #FFF;
 	padding: 25px 30px;
 	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 }
 .ba-post__body--abs{
@@ -98,8 +100,6 @@ select {
 
 }
 .ba-post__title {
-/*	display: flex;
-	flex-grow: 2;*/
 	font-size: 22px;
 	font-weight: 800;
 
