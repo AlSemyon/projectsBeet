@@ -1,0 +1,30 @@
+.header {
+	text-align: center;
+	position: relative;
+
+	&__slogan {
+		font: 500 18px/24px Raleway;
+		.upper-color-text (@dark-grey);
+	}
+
+	&__title {
+		font: 900 60px/66px Roboto;
+		.upper-color-text (@yellow);
+		margin-bottom: 40px;
+	}
+
+	&__icon {
+		width: 16px;
+		height: 20px;
+	}
+
+	&:before {
+		.bottom-header-line();
+		right: 24%;
+	}
+
+	&:after {
+		.bottom-header-line();
+		left: 24%;
+	}
+}

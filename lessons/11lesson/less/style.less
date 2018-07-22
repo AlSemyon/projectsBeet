@@ -1,0 +1,92 @@
+//imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto');
+@import url(container);
+@import url(header);
+@import (inline) url(../css/reset.css);
+
+//variables
+@yellow: rgb(255, 204, 0);
+@black: rgb(51, 51, 51);
+@grey: lighten(@black, 75%);
+@dark-grey: lighten(@black, 55%);
+
+.upper-color-text (@color) {
+	color: @color;
+	text-transform: uppercase;
+}
+
+.bottom-header-line {
+	content: '';
+	position: absolute;
+	width: 25%;
+	border-bottom: 1px solid @yellow;
+	bottom: 12px;
+}
+
+.fancy-arrow {
+	content: '';
+	position: absolute;
+	border-bottom: 1px solid @yellow;
+	border-right: 1px solid @yellow;
+	top: 49%;
+	height: 2%;
+	width: 1%;
+	cursor: pointer;
+}
+
+.main {
+	display: flex;
+	position: relative;
+
+	&__section {
+		width: 50%;
+		&:after {
+			content: '';
+			position: absolute;
+			border-right: 2px solid @yellow;
+			top: 60px;
+			bottom: 40px;
+			right: 50%;
+		}
+	}
+
+	&__img-border {
+		border: 1px solid @yellow;
+		position: relative;
+		width: 400px;
+		height: 400px;
+		margin: 0 auto;
+
+		&:before {
+			content: '';
+			position: absolute;
+			background: white;
+			top: -1px;
+			bottom: -1px;
+			right: 25%;
+			left: 25%;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			background: white;
+			top: 25%;
+			bottom: 25%;
+			right: -1px;
+			left: -1px;
+		}
+	}
+
+	&:before {
+		.fancy-arrow ();
+		left: 0;
+		transform: rotate(135deg);
+	}
+
+	&:after {
+		.fancy-arrow ();
+		right: 0;
+		transform: rotate(-45deg);
+	}
+}
