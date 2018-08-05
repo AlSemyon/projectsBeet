@@ -73,3 +73,41 @@
 	flex-grow: 2;
 	align-items: center;
 }
+
+.sprite { 
+	background: url('../img/sprite.png') no-repeat top left;
+	width: 79px;
+	height: 37px;
+}
+
+.sprite__design {
+	background-position: 0 0;
+	width: 80px;
+	height: 84px;
+} 
+
+.sprite__development {
+	background-position: 0 -94px;
+	height: 76px; 
+} 
+
+.sprite__prod_management {
+	background-position: 0 -180px;
+	height: 91px;
+} 
+
+.sprite__logo_dark {
+	background-position: 0 -281px;
+	width: 35px; 
+} 
+
+.sprite__logo {
+	background-position: 0 -328px;
+	width: 94px;
+	height: 98px;
+} 
+
+.sprite__scroll {
+	background-position: 0 -436px;
+	width: 23px; 
+}
