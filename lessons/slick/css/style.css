@@ -1,0 +1,21 @@
+@font-face {
+	font-family: 'slick';
+	src: url('../fonts/slick.eot') format('embedded-opentype'), 
+	url('../fonts/slick.woff') format('woff'), 
+	url('../fonts/slick.svg') format('svg'),
+	url('../fonts/slick.ttf') format('truetype');
+}
+
+body {
+	background: black;
+	color: white;
+}
+
+.carousel {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.slick-dots button:before{ 
+	color: white!important;
+ }
