@@ -1,0 +1,44 @@
+.modal {
+    width: 200px;
+    height: 200px;
+    background: green;
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 101;
+    margin: auto;
+    transform: translateY(-100px);
+    animation: fadeinout  2s;
+    @keyframes fadeinout  {
+        from { opacity: 0 }
+        to { opacity: 1 }
+    }
+        
+    &.open {
+        display: block;
+        transform: translateY(0);
+
+        
+        & + .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 100;
+            opacity: .5;
+            background: grey;
+            animation: fadeinoutoverl  2s;
+            @keyframes fadeinoutoverl  {
+                from { opacity: 0 }
+                to { opacity: 0.5}
+            }
+        }
+
+    }
+
+
+}

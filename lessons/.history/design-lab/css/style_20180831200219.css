@@ -271,20 +271,10 @@
 	text-transform: capitalize;
 }
 
-.mobile__menu {
-	display: none;
-}
+
 
 @media screen and (max-width: 1219px) {
 	.header {
 		height: auto;
-	}
-	.menu {
-		display: none;
-	}
-
-	.mobile__menu {
-		display: flex;
-		justify-content: space-around;
 	}
 }

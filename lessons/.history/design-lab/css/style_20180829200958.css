@@ -248,43 +248,25 @@
 	width: 23px; 
 }
 
+
+menu {
+	padding: 0;
+}
+
 .menu {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 0;
+	padding: 0;
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
 }
 
-/* .menu__element {
+.menu__element {
 
-} */
-
-.menu__element--active .menu__link{
-	text-decoration: underline;
 }
 
-.menu__link {
-	text-decoration: none;
-	text-transform: capitalize;
-}
-
-.mobile__menu {
-	display: none;
-}
 
 @media screen and (max-width: 1219px) {
 	.header {
 		height: auto;
-	}
-	.menu {
-		display: none;
-	}
-
-	.mobile__menu {
-		display: flex;
-		justify-content: space-around;
 	}
 }

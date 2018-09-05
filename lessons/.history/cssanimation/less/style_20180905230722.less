@@ -1,0 +1,63 @@
+.modal {
+    width: 200px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 101;
+    margin: auto;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+
+    &.open {
+        opacity: 1;
+        
+        & + .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 100;
+            opacity: .5;
+            background: grey;
+            transition: all 0.3s ease-in;
+        }
+
+    }
+}
+
+.flip {
+    display: inline-block;
+
+    .front {
+        width: 200px;
+        height: 200px;
+        background: green;
+        display: inline-block;
+    }
+
+    .back {
+        width: 200px;
+        height: 200px;
+        display: none;
+        background: yellow;
+    }
+
+    &:hover {
+        transition: .6s;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+        .front {
+            display: none;
+        }
+    
+        .back {
+            transform: rotateY(-180deg);
+            display: inline-block;
+        }
+    }
+}

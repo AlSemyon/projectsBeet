@@ -252,6 +252,7 @@
 	position: fixed;
 	top: 0;
 	right: 0;
+	bottom: 0;
 	left: 0;
 	list-style: none;
 	display: flex;
@@ -262,29 +263,13 @@
 
 } */
 
-.menu__element--active .menu__link{
-	text-decoration: underline;
-}
-
 .menu__link {
 	text-decoration: none;
 	text-transform: capitalize;
 }
 
-.mobile__menu {
-	display: none;
-}
-
 @media screen and (max-width: 1219px) {
 	.header {
 		height: auto;
-	}
-	.menu {
-		display: none;
-	}
-
-	.mobile__menu {
-		display: flex;
-		justify-content: space-around;
 	}
 }
