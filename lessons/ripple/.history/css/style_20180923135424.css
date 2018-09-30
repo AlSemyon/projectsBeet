@@ -1,0 +1,22 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+
+.ripple {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 10px solid pink;
+    border-radius: 50%;
+    zoom: 0;
+    animation: rippleEfect 1.5s;
+}
+
+@keyframes rippleEfect {
+    to{
+        transform: scale(1); opacity: 0;
+    }
+}

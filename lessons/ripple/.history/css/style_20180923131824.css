@@ -1,0 +1,12 @@
+.container {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.ripple {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    border-radius: 50%;
+}

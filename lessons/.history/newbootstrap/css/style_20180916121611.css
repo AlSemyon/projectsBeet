@@ -1,0 +1,98 @@
+.header-menu {
+    float: right;
+}
+
+.menu-tablet {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-element {
+    padding: 0px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.first-level:hover .second-level{
+    display: block;
+    position: absolute;
+}
+
+.second-level {
+    display: none;
+}
+
+.header-section {
+    background: url('../img/site-hero.jpg') no-repeat;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    height: 200px;
+}
+
+.hero-title {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 30px 45px;
+    border: 10px solid black;
+    margin: 0px; 
+}
+
+.marked-text {
+    background-color: #7beec7;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    line-height: 40px;
+}
+
+.history-section {
+
+}
+
+.history-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    position: relative;
+    z-index: 1;
+}
+
+h3::after {
+    content: '';
+    width: 65px;
+    position: absolute;
+    background-color:#7beec7;
+    left: 0;
+    top: 50%;
+    bottom: -50%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 1199px) {
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-tablet {
+        display: none;
+    }
+}

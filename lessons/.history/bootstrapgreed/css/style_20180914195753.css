@@ -1,0 +1,25 @@
+.menu{
+
+}
+
+.header-menu {
+    float: right;
+}
+
+.menu-tablet {
+    list-style: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-tablet {
+        display: none;
+    }
+}

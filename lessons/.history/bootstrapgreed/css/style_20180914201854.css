@@ -1,0 +1,37 @@
+.menu{
+
+}
+
+.header-menu {
+    float: right;
+}
+
+.menu-tablet {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.menu-element {
+    padding: 0px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.header {
+    background: url('../img/Layer\ 4.png') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1199px) {
+    .menu-mobile {
+        display: block;
+    }
+
+    .menu-tablet {
+        display: none;
+    }
+}

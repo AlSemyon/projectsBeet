@@ -1,0 +1,18 @@
+.svg-beet {
+    fill: blue;
+    transition: opacity ease 3s;
+
+    opacity: 0.2;
+}
+
+.svg-beet:hover {
+    opacity: 1;
+}
+
+.svg-text {
+
+}
+
+.svg-icon {
+
+}
